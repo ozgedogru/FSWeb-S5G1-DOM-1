@@ -56,14 +56,16 @@ document.querySelectorAll("nav > a")[3].textContent = "Özellikler";
 document.querySelectorAll("nav > a")[4].textContent = "Hakkımızda";
 document.querySelectorAll("nav > a")[5].textContent = "İletişim";
 
-document.getElementsByTagName("a").className = "italic";
+document.querySelectorAll("nav a").className = "italic";
 
-document.getElementById("logo-img").src = "../mocks/img/logo.png";
+document.getElementById("logo-img").src = "http://localhost:9000/img/logo.png";
+document.getElementById("logo-img").alt = "Bir Şirket Sitesi logo";
 
-document.querySelector(".cta-text h1").textContent = "Bu DOM Mükemmel!";
+document.querySelector(".cta-text h1").textContent = "Bu DOM Mükemmel";
 document.querySelector(".cta-text button").textContent = "Başlayın";
 
-document.getElementById("cta-img").src = "../mocks/img/cta.png";
+document.getElementById("cta-img").src = "http://localhost:9000/img/cta.png";
+document.getElementById("cta-img").alt = "Bir kod parçası resmi";
 
 const baslikArr = document.querySelectorAll(".main-content .text-content h4");
 
@@ -77,7 +79,8 @@ baslikArr[1].textContent = "Hakkında";
 icerikArr[1].textContent =
   "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
-document.getElementById("middle-img").src = "../mocks/img/accent.png";
+document.getElementById("middle-img").src =
+  "http://localhost:9000/img/accent.png";
 
 baslikArr[2].textContent = "Servisler";
 icerikArr[2].textContent =
